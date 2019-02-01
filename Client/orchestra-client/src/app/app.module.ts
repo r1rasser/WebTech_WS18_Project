@@ -20,7 +20,7 @@ import { CreateCompositionComponent } from './member/create-composition/create-c
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { FooterComponent } from './footer/footer.component';
 // const config: SocketIoConfig = {url:'http://143.205.196.193:3000', options:{}};
-const config: SocketIoConfig = {url:'http://192.168.0.241:3000', options:{}};
+const config: SocketIoConfig = {url:'http://127.0.0.1:3000', options:{}};
 // const config: SocketIoConfig = {url:'http://localhost:3000', options:{}};
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import { ScrollDispatchModule } from '@angular/cdk/scrolling';

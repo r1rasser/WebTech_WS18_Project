@@ -1,6 +1,6 @@
 #hero{
    /*background-image: url('http://localhost:3000/img/DSC_5409.jpg');
-   */background-image: url('http://192.168.0.241:3000/img/DSC_5409.jpg');
+   */background-image: url('http://127.0.0.1:3000/img/DSC_5409.jpg');
    /*background-image: url('http://143.205.196.193:3000/img/DSC_5409.jpg');*/
     
     background-size:cover;

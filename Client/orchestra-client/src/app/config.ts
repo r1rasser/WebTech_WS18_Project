@@ -31,7 +31,7 @@ export const config_local = {
   }
 }
 export const config_network = {
-  "serverHost": "192.168.0.241",
+  "serverHost": "127.0.0.1",
   "serverPort": 3000,
   "memberRouteMain": "member",
   "memberRoutes":{
