@@ -15,3 +15,4 @@ Dependencies (npm):
 	npm install --save jsonwebtoken
 	npm install --save crypto-js
 	npm install --save web-push
+	npm install --save mysql
