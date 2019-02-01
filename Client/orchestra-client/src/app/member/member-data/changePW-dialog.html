@@ -1,0 +1,19 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<h1 mat-dialog-title>Hallo {{data.name}}!</h1>
+<div mat-dialog-content>
+    <p>Aktuelles Passwort:</p>
+    <mat-form-field>
+        <input matInput placeholder="hier altes Passwort eingeben" [(ngModel)]="data.oldPW" [type]="hide ? 'password' : 'text'">
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </mat-form-field>
+    <p>Neues Passwort:</p>
+    <mat-form-field>
+        <input matInput placeholder="hier neues Passwort eingeben" [(ngModel)]="data.newPW" [type]="hide ? 'password' : 'text'">
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Abbrechen</button>
+  <button mat-button (click)="onConfirm()" cdkFocusInitial>Bestätigen</button>
+</div>

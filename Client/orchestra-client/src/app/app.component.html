@@ -1,0 +1,39 @@
+<head>
+</head>
+
+<body>
+	<header>
+		<img src="https://codetheweb.blog/assets/img/icon2.png" id ="logo">
+<nav class="PageNav">
+    <ul>
+        <li><button class="btn1" mat-button>Test</button></li>
+		<li><button mat-button (click)="show(0)">Startseite</button></li>
+        <li><button mat-button (click)="show(1)">Über Uns</button></li>
+        <li><button class =bt1 mat-button (click)="show(2)">Mitgliedsbereich</button></li>
+    </ul>
+</nav>
+</header>
+<br>
+<main>
+<div class ="site">
+		<div *ngIf="showPage[0]">
+			<app-site></app-site>
+		</div>
+		<div class="container color-dark" *ngIf="showPage[1]" >
+			<p>
+				It's something...
+			</p>
+			<p>
+			Irgend ein Text zum ausprobieren.
+			</p>
+		</div>
+		<div *ngIf="showPage[2]">
+			<app-member></app-member>
+		</div>
+</div>
+</main>
+<footer>
+	<app-footer></app-footer>
+	</footer>
+</body>
+

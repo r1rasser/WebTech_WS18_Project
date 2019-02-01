@@ -1,0 +1,69 @@
+<html>
+  <div class="Header">
+    Termin erstellen
+  </div>
+  <div class="form">
+    <div class="labelTyp">
+      <label>Typ</label>
+      <div id="multiselect">
+      <ng-multiselect-dropdown 
+      [placeholder]="'Bitte Typ auswählen'"
+      [data]="typesDropDown"
+      [(ngModel)]="typesSelected"
+      [settings]="typeDropDownSettings"
+      (onSelect)="onItemSelect($event)"></ng-multiselect-dropdown> 
+      </div>
+      <label class="example-input-wrapper">
+        Von:
+        <input id="von" placeholder="Date Time:" [(ngModel)]="dateTimeRange"
+               [owlDateTime]="dtFrom" [owlDateTimeTrigger]="dtFrom"
+               [selectMode]="'rangeFrom'">
+        <owl-date-time [pickerMode]="'dialog'" #dtFrom></owl-date-time>
+      </label>
+      <br/>
+      <label class="example-input-wrapper">
+        Bis:
+        <input id="bis" placeholder="Date Time:" [(ngModel)]="dateTimeRange"
+              [owlDateTime]="dtTo" [owlDateTimeTrigger]="dtTo"
+              [selectMode]="'rangeTo'">
+        <owl-date-time [pickerMode]="'dialog'" #dtTo></owl-date-time>
+      </label>
+    <div id="comment">
+      <textarea class="comment" [(ngModel)]="comment" placeholder="Hier Zusatzinformationen angeben." cols="50" rows="3"></textarea>
+    </div>
+    </div>
+    <div class="labelProgramm">
+      <label>Programm</label>
+      <div id="multiselect">
+      <ng-multiselect-dropdown 
+          [placeholder]="'Bitte Stücke auswählen'"
+          [data]="proramDropDown"
+          [(ngModel)]="programSelected"
+          [settings]="programDropDownSettings"
+          (onSelect)="onItemSelect($event)"
+          (onSelectAll)="onSelectAll($event)"></ng-multiselect-dropdown>
+      </div>     
+    </div>  
+    <button mat-button (click)="addToList()">OK</button>
+  </div>
+    <cdk-virtual-scroll-viewport itemSize="250" class="example-viewport">
+      <dl class="example-dl">
+        <ng-container *cdkVirtualFor="let app of appointmentsScroll" class="example-item">
+          <div class="gold">
+          <dt class="dt">{{app.type}}</dt>
+          <dd class="dd">
+            von {{app.start | date:"dd.MM.yyyy, hh:mm a"}}
+            bis {{app.end | date:"dd.MM.yyyy, hh:mm a"}}
+          <div class="program" *ngFor="let p of app.program">
+            {{p.name}} ({{p.composer}})
+          </div>
+          <div class="comments">
+            {{app.comment}}
+          </div>
+        </dd>
+        </div>
+        </ng-container>
+      </dl>
+    </cdk-virtual-scroll-viewport>
+    <button mat-button (click)="addToAppointments()">Bestätigen</button>
+</html>

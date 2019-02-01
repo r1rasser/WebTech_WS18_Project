@@ -1,0 +1,115 @@
+html{
+    background-color: rgba(51, 51, 51, 0.836);
+    padding: 30px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.Header{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.labelTyp{
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    padding-top: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.labelProgramm{
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    padding-right: 40;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+button{
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+#von{
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 20px;
+}
+#bis{
+    margin-left: 14px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 20px;
+}
+  input:focus {
+      border-color:#6e8095;
+      outline: none;
+    }
+#bis:focus{
+    border-color:#6e8095;
+      outline: none;
+}
+#von:focus{
+    border-color:#6e8095;
+      outline: none;
+}
+label{
+    font-weight: bold;
+}
+.example-viewport {
+    background-color: white;
+    height: 200px;
+    padding: 30px;
+    padding-top: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+  }
+  
+  .dt {
+    height: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .dd {
+    min-height: 100px;
+  }
+
+#comment{
+      margin-top: 10px;
+  }
+  #multiselect{
+      width: 350px;
+      margin-top: 10px;
+  }
+  
+  div.gold{
+    background-color: rgba(166, 135, 74, 0.842);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}

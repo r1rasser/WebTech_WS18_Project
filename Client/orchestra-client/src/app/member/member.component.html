@@ -1,0 +1,48 @@
+<html>
+<div class="picture">
+  <div *ngIf="showForm" class="form">
+    <form [formGroup]="loginForm" class="login">
+      <h1 class="login-title">Login-Bereich</h1>
+      <input class="login-input" #emailField id="email" type="email" formControlName="email" email="true" required placeholder="E-Mail-Adresse/Username" autofocus>
+      <input class="login-input" #passwordField id="password" type="password" formControlName="password" required placeholder="Passwort">
+      <button class="login-button" mat-button (click)="login()">Login</button>
+  <p class="login-lost"><a href="">Passwort vergessen?</a></p>
+  </form>
+  </div>
+  </div>
+<div *ngIf="showContent" class="content">
+  <nav class="MemberAreaNav">
+    <ul>
+        <li><button mat-button (click)="show(0)">Persönliche Daten</button></li>
+        <li *ngIf="showNavigation[0]"><button mat-button (click)="show(1)">Nächste Termine</button></li>
+        <li *ngIf="showNavigation[0]"><button mat-button (click)="show(2)" class="button-badge">News
+          <span class="badge alert">{{unread}}</span>
+        </button></li>
+        <li *ngIf="showNavigation[1]"><button mat-button (click)="show(3)">Termin erstellen</button></li>
+        <li *ngIf="showNavigation[1]"><button mat-button (click)="show(4)">News erstellen</button></li>
+        <li *ngIf="showNavigation[1]"><button mat-button (click)="show(5)">Mitglied erstellen</button></li>
+        <li><button mat-button (click)="logout()">Logout</button></li>
+    </ul>
+  </nav>
+  <div class="memberContent">  
+    <div *ngIf="showMemberData[0]">
+      <app-member-data></app-member-data>
+    </div>
+    <div *ngIf="showMemberData[1]">
+      <app-member-appointments></app-member-appointments>
+    </div>
+    <div *ngIf="showMemberData[2]">
+      <app-member-news></app-member-news>
+    </div>
+    <div *ngIf="showMemberData[3]">
+      <app-create-appointment></app-create-appointment>
+    </div>
+    <div *ngIf="showMemberData[4]">
+      <app-create-news></app-create-news>
+    </div>
+    <div *ngIf="showMemberData[5]">
+      <app-create-member></app-create-member>
+    </div>
+  </div>
+</div>
+</html>

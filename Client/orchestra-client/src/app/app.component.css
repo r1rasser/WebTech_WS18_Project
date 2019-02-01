@@ -1,0 +1,67 @@
+
+header img{
+	height:70px;
+}
+header{
+	background-color: rgba(51,51,51,0.8);
+	
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+	display: flex;
+    align-items: center;
+    z-index: 99; /*damit der header im Vordergrund bleibt*/
+}
+body{
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 70px;    
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main{
+    min-height: 100px;
+    flex: 1;
+}
+header* {
+	display: inline;
+}
+ul {
+    list-style-type: none;
+	color:white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(51,51,51,0.03);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li button:hover {
+    background-color: #111;
+}
+/*Grauen Rahmen für alle List items außer das Letzte*/
+li {
+    border-right: 1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+
+

@@ -1,0 +1,26 @@
+<html>
+<div class="Header">
+  Ihre nächsten Termine:
+</div>
+
+<cdk-virtual-scroll-viewport itemSize="300" class="example-viewport">
+    <dl class="example-dl">
+      <ng-container *cdkVirtualFor="let app of appointments" class="example-item">
+        <div class="gold">
+        <dt class="dt">{{app.type}}</dt>
+        <dd class="dd">
+          von {{app.start | date:"dd.MM.yyyy, hh:mm a"}}
+          bis {{app.end | date:"dd.MM.yyyy, hh:mm a"}}
+          <div class="program" *ngFor="let p of app.program">
+            {{p.name}} ({{p.composer}})
+          </div>
+          <div class="comments">
+            {{app.comment}}
+          </div>
+      </dd>
+    </div>
+      </ng-container>
+      
+    </dl>
+  </cdk-virtual-scroll-viewport>
+</html>

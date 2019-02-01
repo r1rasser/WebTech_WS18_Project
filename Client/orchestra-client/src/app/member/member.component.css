@@ -1,0 +1,127 @@
+div.content {
+    display: flex;
+    flex-direction: row;
+}
+div.form > form {
+    display: flex;
+    flex-direction: column;
+}
+div.content > .MemberAreaNav {
+    list-style: none;
+    flex: 20%;
+}
+div.content > .memberContent {
+    flex: 80%;
+}
+.badge{
+  padding-right: 5px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+ul{
+	list-style-type: none;
+    margin-top: 20px;
+    margin-left:30px;
+    margin-right: 20px;
+    padding: 0;
+    background-color: rgba(166, 135, 74, 0.842);
+}
+li button {
+	color: white;
+	text-decoration: none;
+	width: 200px;
+}
+
+
+/* Login Form*/
+body {
+    background: #2d343d;
+    height: 100%;
+  }
+  
+  .login {
+    margin: 20px auto;
+    width: 300px;
+    padding: 30px 25px;
+    background: white;
+    border: 1px solid #273057d8;
+  }
+  
+  h1.login-title {
+    margin: -28px -25px 25px;
+    padding: 15px 25px;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: 300;
+    color: #ADADAD;
+    text-align:center;
+    background: #f7f7f7;
+   
+  }
+  
+  .login-input {
+    width: 285px;
+    height: 50px;
+    margin-bottom: 25px;
+    padding-left:10px;
+    font-size: 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .login-input:focus {
+      border-color:#6e8095;
+      outline: none;
+    }
+  .login-button {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    background: #273057d8;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer; 
+    outline:0;
+  }
+  
+  .login-lost
+  {
+    text-align:center;
+    margin-bottom:0px;
+  }
+  
+  .login-lost a
+  {
+    color:#666;
+    text-decoration:none;
+    font-size:13px;
+  }
+  
+  html{
+      /*background-image: url('http://localhost:3000/img/DSC_5397.jpg');*/
+      background-image: url('http://192.168.0.241:3000/img/DSC_5397.jpg');
+      /*background-image: url('http://143.205.196.193:3000/img/DSC_5397.jpg');*/
+      background-size:cover;
+      position:relative;
+      height:200vh;
+      width: 100%;
+      margin: 0px 0px;
+      padding: 0px;
+      border: 0px;
+   }
+  
+   .form{
+      position:absolute;
+      top:20%;
+      text-align:center;
+      width:100%;
+      color: black;
+      font-size:20px;
+      -ms-transform: translate(0,-50%); /* IE 9 */
+      -webkit-transform: translate(0,-50%); /* Safari */
+      transform: translate(0,-50%);
+   }

@@ -1,0 +1,21 @@
+<html>
+<cdk-virtual-scroll-viewport itemSize="200" class="News">
+  <dl class="example-dl">
+    <ng-container *cdkVirtualFor="let newsI of newsScroll" class="example-item">
+      <div (click)="show(newsI.id)" class="read-{{newsI.read}}">
+        <dt class="dt">{{newsI.type}}</dt>
+        <dd class="dd">
+          <div>
+            {{newsI.text}}
+            {{newsI.comp}}
+            <a href="newsI.link">{{newsI.link}}</a>
+          </div>
+          <p *ngIf="!(newsI.read)">
+            ungelesen :o
+          </p>
+      </dd>
+    </div>
+    </ng-container>
+  </dl>
+</cdk-virtual-scroll-viewport>
+</html>

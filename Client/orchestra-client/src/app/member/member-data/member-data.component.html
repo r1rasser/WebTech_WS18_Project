@@ -1,0 +1,43 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<html>
+  <div class="Header">
+    Persönliche Daten
+  </div>
+  
+  <div class="EditData">
+  <form [formGroup]="editForm">
+    Mitgliedsnummer: {{userData.member.membernumber}}
+    <br/>
+    Vorname: {{userData.member.firstname}}
+    <br/>
+    Nachname: {{userData.member.lastname}}
+    <br/>
+    Geburtsdatum: {{userData.member.dob | date:"dd.MM.yyyy"}}
+    <br/>
+    <br>
+    Username: <input id="usernameUpd" type="text" formControlName="usernameUpd" (input)="checkAvailability()" placeholder="{{(saveEnabled) ? ((userData.member.username == '') ? 'Hier Usernamen eingeben':'Hier neuen Usernamen eingeben (war ' + userData.member.username + ')'):''}}" value="{{userData.member.username}}">
+    <mat-icon *ngIf="saveEnabled && (isAvailable != 2)">{{(isAvailable == 1) ? 'check_circle_outline':'highlight_off'}}</mat-icon>
+    <br/>
+    E-Mail: <input id="emailUpd" email="true" formControlName="emailUpd" value="{{userData.member.email}}">
+    <br/>
+    Telefon: <input id="phoneUpd" type="text" formControlName="phoneUpd" value="{{userData.member.phone}}">
+    <br/>
+    Handy: <input id="mobileUpd" type="text" formControlName="mobileUpd" value="{{userData.member.mobile}}">
+    <br/>
+    <br>
+    Instrument: {{userData.member.instrument}}
+    <div class="Address">
+      Adresse: {{userData.address.street}} {{userData.address.number}}/{{userData.address.door}} ({{userData.address.floor}}), {{userData.address.ZIP}} {{userData.address.city}}, {{userData.address.state}}
+    </div>
+  </form>
+</div>
+
+<div class="button_Data">
+  <button *ngIf="!saveEnabled" mat-button (click)="enableEdit()">Bearbeiten</button>
+  <button *ngIf="saveEnabled" mat-button (click)="cancelEdit()">Abbrechen</button>
+  <button *ngIf="saveEnabled" mat-button (click)="saveEdit()">Speichern</button>
+  <button mat-button (click)="showChangePWDialog()">Passwort ändern</button>
+</div>
+
+</html>

@@ -1,0 +1,16 @@
+{
+    "database": {
+        "host": "localhost",
+        "user": "orchestra_local",
+        "password": "local_admin",
+        "db": "orchestra_DB"
+    },
+    "server": {
+        "host": "localhost",
+        "port": 3000
+    },
+    "vapidKeys":{
+        "publicKey":"BEKx0A6cNoF6oYG5DnJVlzM_evGFYREPP0Gi7hBxM-_Si80bKbnKYa6HCQNQC8tCShka-MmNIGVvB4uW67yRBOc",
+        "privateKey":"UxYZrx4w52eh9IE4_HN7YMJH5myO-H3D7UX2jVbcLKE"
+    }
+}

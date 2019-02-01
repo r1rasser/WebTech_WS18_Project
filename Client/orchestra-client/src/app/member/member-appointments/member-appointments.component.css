@@ -1,0 +1,55 @@
+html{
+    background-color: rgba(51, 51, 51, 0.836);
+    padding: 30px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.example-viewport {
+    background-color: white;
+    height: 300px;
+    padding: 30px;
+    padding-top: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+.Header{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+/*
+.example-viewport {
+    height: 200px;
+    width: 600px;
+    border: 1px solid black;
+  }*/
+  
+  .dt {
+    height: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  /*.dd {
+      height: 120px;
+      background-color: rgba(166, 135, 74, 0.842);
+  }*/
+  div.gold{
+      background-color: rgba(166, 135, 74, 0.842);
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 20px;
+      padding-bottom: 20px;
+      padding-top: 10px;
+
+  }

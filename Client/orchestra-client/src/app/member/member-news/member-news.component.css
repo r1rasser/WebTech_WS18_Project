@@ -1,0 +1,44 @@
+html{
+    background-color: rgba(51, 51, 51, 0.836);
+    padding: 30px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.News{
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    padding-top: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;height: 300px;
+}
+.dt {
+    height: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+.News > dl.example-dl > ng-container.example-item > div.read-0 {
+    background-color:  rgba(233, 173, 52, 0.842);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.News > dl.example-dl > ng-container.example-item > div.read-1 {
+    background-color:  rgba(166, 135, 74, 0.842);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}

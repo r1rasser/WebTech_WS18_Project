@@ -1,0 +1,13 @@
+{
+    "serverHost": "localhost",
+    "serverPort": 3000,
+    "loginRoute": "login",
+    "userAppointmentsRoute": "userAppointments",
+    "appointmentsRoute": "appointments",
+    "changeUsername":"updateUsername",
+    "changePassword":"updatePassword",
+    "userDataRoute":"userData",
+    "userFunctionsRoute":"functions",
+    "sheetMusicRoute":"sheetMusic",
+    "organisationRoute":"organisation"
+  }
