@@ -20,7 +20,7 @@ CREATE TABLE `member` (
  `instrument_id` int(11) NOT NULL,
   FOREIGN KEY (address_id) references address(id),
   FOREIGN KEY (instrument_id) references instrument(id),
- PRIMARY KEY (`id`, `membernumber`)
+ PRIMARY KEY (`id`) 
 ) DEFAULT CHARACTER SET = utf8;
 INSERT INTO `member` ( 
 `firstname`, `lastname`,`dateOfBirth`, `email`,
