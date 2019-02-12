@@ -7,7 +7,7 @@ SET FOREIGN_KEY_CHECKS=0;
 drop table if exists member;
 CREATE TABLE `member` (
  `id` int(11) NOT NULL AUTO_INCREMENT unique,
- `membernumber` varchar(100) as (substring(sha(concat(`firstname`,',',`lastname`)),1,10)) stored not null unique,
+ `membernumber` varchar(100) as (substring(sha(concat(`firstname`,',',`lastname`)),1,10)) stored,
  `firstname` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
  `lastname` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
  `dateOfBirth` datetime not null,
